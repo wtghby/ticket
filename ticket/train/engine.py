@@ -60,8 +60,8 @@ class Engine(object):
             item['crh_bed'] = data[-4] if data[-4].strip() != "" else "-"  # 动车动卧
             results.append(item)
 
-            print(item['number'] + '---' + item['start_station_ch'] + '---' + item['end_station_ch'] + '---' + item[
-                'from_station_ch'] + '---' + item['to_station_ch'])
+            # print(item['number'] + '---' + item['start_station_ch'] + '---' + item['end_station_ch'] + '---' + item[
+            #     'from_station_ch'] + '---' + item['to_station_ch'])
         return results
 
     # 根据值value获取字典stations的key值，如get_stations_key('SZQ') = '深圳'
