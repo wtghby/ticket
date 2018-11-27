@@ -8,7 +8,7 @@ from ticket.resolve.resolver import Resolver
 
 start = '重庆'
 end = '成都'
-date = '2018-11-28'
+date = '2018-11-27'
 
 engine = Engine()
 no = True
@@ -21,5 +21,6 @@ while no:
             print("已经有余票，请尽快购买！")
             no = False
     except Exception as ex:
+        print(ex)
         ch = Chrome()
         ch.run()

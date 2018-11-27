@@ -15,7 +15,7 @@ class Chrome(object):
     def run(self):
         delay = 3
         chrome_options = Options()
-        # chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--headless')
         # chrome_options.add_argument(('--proxy-server=http://' + '132.58.168.12'))
         driver = webdriver.Chrome(options=chrome_options, executable_path="./chromedriver.exe")
 
@@ -36,4 +36,4 @@ class Chrome(object):
         query = driver.find_element_by_id('search_one')
         query.click()
 
-        time.sleep(10)
+        time.sleep(delay)
